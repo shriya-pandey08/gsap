@@ -15,7 +15,7 @@ tl.from("h4",{
   stagger:0.3
 })
 // to is used to move animation from initial to final
-t1.from("h1",{
+tl.from("h1",{
   y:20,
   opacity:0,
   duration:1,
