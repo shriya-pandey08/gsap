@@ -6,7 +6,7 @@ gsap.to("#box", {
   backgroundColor:"pink",
   borderRadius:"50%",
   scale:0.2,
-  repeat:-1,
+  repeat:-1, //-1 as it will then mve infinite times
   yoyo:true
 })
 gsap.from("#box2",{
