@@ -6,7 +6,8 @@ gsap.to("#box", {
   backgroundColor:"pink",
   borderRadius:"50%",
   scale:0.2,
-  repeat:-1
+  repeat:-1,
+  yoyo:true
 })
 gsap.from("#box2",{
   x:1000,
@@ -14,5 +15,7 @@ gsap.from("#box2",{
   delay:1,
   rotate:360,
   backgroundColor:"orange",
-  borderRadius:"50%"
+  borderRadius:"50%",
+  repeat:-1,
+  yoyo:true
 })
