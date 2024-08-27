@@ -1,23 +1,29 @@
-var tl=gsap.timeline()
+gsap.from("#page1 #box",{
+  scale:0,
+  delay:1,
+  duration:2,
+  rotate:360
+})
 
-tl.from("h2",{
-  y:-30,
-  opacity:0,
-  duration:1,
-  delay:0.5
+gsap.from("#page2 #box",{
+  scale:0,
+  duration:2,
+  rotate:180,
+  // scrollTrigger:"#page2 #box"  
+  //this helps to create animation when the screen is scrolled 
+  //this can be also written in the detail form by creating object- given below 
+
+  scrollTrigger:{
+    trigger:"#page2 #box",
+    scroller:"body",
+    markers:true,
+    start:"top 60%"  // delay command is removed while using this 
+  }
 })
-// from is used to move animation from final to initial
-tl.from("h4",{
-  y:-30,
-  opacity:0,
-  duration:1,
-  delay:0.5,
-  stagger:0.3
-})
-// to is used to move animation from initial to final
-tl.from("h1",{
-  y:20,
-  opacity:0,
-  duration:1,
-  scale:0.2
+gsap.from("#page3 #box",{
+  scale:0,
+  delay:1,
+  duration:2,
+  rotate:60,
+  scrollTrigger:"#page3 #box"
 })
